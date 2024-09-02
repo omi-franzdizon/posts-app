@@ -1,4 +1,6 @@
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import Posts from './posts';
+import RootWrapper from './rootwrapper';
 
 const client = new ApolloClient({
   uri: 'https://flyby-router-demo.herokuapp.com/',
@@ -8,9 +10,9 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div>
-        Hello posts
-      </div>
+      <RootWrapper>
+        <Posts />
+      </RootWrapper>
     </ApolloProvider>
   )
 }
