@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     padding: 0 20px 0;
     box-sizing: border-box;
     div {
@@ -20,6 +20,8 @@ export const Header = styled.div`
     align-items: center;
     color: whitesmoke;
     border-radius: 0 0 4px 4px;
+    position: sticky;
+    top: 0px;
 `;
 
 export const Content = styled.div`
