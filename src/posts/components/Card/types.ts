@@ -1,4 +1,4 @@
-export interface User {
+export interface IUser {
     id: number;
     name: string;
     username: string;
@@ -7,5 +7,5 @@ export interface User {
 export interface ICardProps {
     title: string;
     body: string;
-    user: User;
+    user: IUser;
 }

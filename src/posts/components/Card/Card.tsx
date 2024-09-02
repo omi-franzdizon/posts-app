@@ -4,11 +4,11 @@ import { ICardProps } from './types';
 
 const Card: FC<ICardProps> = ({title, body, user}) => {
     return (
-    <CardContainer>
-        <PostTitle>{title}</PostTitle>
-        <PostUser>{user.name} ({user.username})</PostUser>
-        <PostBody>{body}</PostBody>
-    </CardContainer>
+        <CardContainer>
+            <PostTitle>{title}</PostTitle>
+            <PostUser>{user.name} ({user.username})</PostUser>
+            <PostBody>{body}</PostBody>
+        </CardContainer>
     );
 }
 

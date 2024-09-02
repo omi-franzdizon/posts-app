@@ -3,7 +3,7 @@ import Posts from './posts';
 import RootWrapper from './rootwrapper';
 
 const client = new ApolloClient({
-  uri: 'https://flyby-router-demo.herokuapp.com/',
+  uri: 'https://graphqlzero.almansi.me/api',
   cache: new InMemoryCache(),
 });
 
